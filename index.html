@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <header>
+            <h1>🌱 Smart Habit Tracker</h1>
+            <p>Build better habits, one day at a time!</p>
+        </header>
+
+        <main>
+            <section class="welcome">
+                <h2>Good Morning! 👋</h2>
+                <p>Let's make today productive.</p>
+            </section>
+
+            <section class="stats">
+                <div class="card">
+                    <h3>Total Habits</h3>
+                    <p id="totalHabits">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Completed</h3>
+                    <p id="completedHabits">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Progress</h3>
+                    <p id="progress">0%</p>
+                </div>
+            </section>
+
+            <section class="habit-section">
+                <h2>Today's Habits</h2>
+
+                <div class="add-habit">
+                    <input
+                        type="text"
+                        id="habitInput"
+                        placeholder="Enter a new habit..."
+                    >
+                    <button id="addButton">+ Add Habit</button>
+                </div>
+
+                <div id="habitList">
+                    <!-- Habits will appear here -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Stay consistent. Small steps create big changes! 💚</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
